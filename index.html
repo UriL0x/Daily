@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily bugle</title>
+  <link rel="stylesheet" href="./boostrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-white">
+  <header class="fixed-top red-bg text-white fixed-header">
+    <div class="container-fluid p-2">  
+      <nav class="navbar navbar-expand-md navbar-dark flex">
+          <div class="bugle-title">
+            <img class="img-header" src="./media/daily.png" alt="">
+            <h2 class="times">Daily Bugle</h2>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse red-bg p-2" id="navbarCollapse">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active" href="#primera-plana">Primera plana</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#segunda-plana">Noticias locales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#clima">Clima</a>
+              </li>
+            </ul>
+          </div>
+
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <section id="primera-plana" class="mb-4 text-white margin-header container-fluid">
+      <h2 class="container-fluid red-bg text-white p-1 text-center">Primera plana</h2>
+      
+      <!--Noticia-->
+      <div class="bg-black">
+        <div class="container-fluid text-center">
+          <h1 class="">¡La Amenaza Sigue Suelta!</h1>
+          <h4 class="top-border">Spider-Man: El Enemigo que No Se Rinde</h4>
+        </div>
+        <div class="">
+          <img class="img" src="./media/spider.jpg" alt="spiderman">
+        </div>
+        <div class="container-fluid text-center pt-3 d-flex flex-row justify-content-center">
+          <p class="d-inline-flex gap-1">
+            <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              <h2>Leer mas</h2>
+            </button>
+          </p>
+        </div>
+      </div>
+      <div class="collapse" id="collapseExample">
+        <div class="container-fluid bg-secondary p-2">
+          <p>
+            ¡Atención, neoyorquinos! Hoy traemos una noticia alarmante
+             sobre el que muchos consideran un "héroe". Spider-Man, el 
+             trepamuros de Nueva York, continúa siendo una amenaza para 
+             nuestra ciudad y, a pesar de los constantes intentos de las 
+             autoridades, sigue suelto. En los últimos días, su presencia
+              ha sido cada vez más polémica, generando un intenso debate
+               entre los ciudadanos sobre su verdadero papel en la sociedad.
+                Mientras algunos lo ven como un protector que se enfrenta a 
+                la criminalidad y defiende a los más vulnerables, otros lo consideran un vigilante descontrolado cuyas acciones, aunque bien intencionadas, ponen en riesgo la seguridad pública. La situación se ha vuelto aún más complicada debido a la creciente actividad de otros villanos en la ciudad, que parecen estar aprovechando la confusión generada por las acciones de Spider-Man. A medida que los enfrentamientos entre héroes y villanos se intensifican, los neoyorquinos se preguntan: ¿es realmente un héroe que lucha por la justicia o un criminal que opera al margen de la ley? Cada día, la tensión crece y la incertidumbre sobre el futuro de la ciudad se siente más palpable. Con las autoridades en alerta máxima, las calles de Nueva York se han convertido en un campo de batalla donde las lealtades son cuestionadas y los destinos de sus habitantes están en juego. La encrucijada que enfrenta la ciudad es más crítica que nunca, y la comunidad debe decidir cómo abordar
+             la compleja figura de Spider-Man en su vida cotidiana.
+          </p>
+        </div>
+      </div>
+      <!--Noticia-->
+    </section>
+
+    <!--Noticias locales-->
+    <section id="segunda-plana" class="container-fluid mb-4">
+      <h2 class="container-fluid red-bg text-white p-1 text-center">Noticias locales</h2>
+
+      <div class="container-fluid">
+        <div class="row gap-2">
+
+          <!--Noticia 1-->
+          <div class="col-md p-0 m-0">
+              <div class="row m-0 text-white">
+                <div class="col-sm bg-black p-2">
+                  <h3 class="top-border">Nueva exibicion en el museo</h3>
+                  <div class="p-0">
+                    <p class="text-white p-2">
+                      El museo inaugurará una nueva exhibición sobre dinosaurios este 
+                      fin de semana. Se espera la visita de miles de familias. 
+                      ¡Una oportunidad perfecta para aprender y disfrutar!
+                    </p>
+                    <div class="container-fluid text-center pt-1 d-flex flex-row justify-content-center">
+                        <p class="d-inline-flex gap-1">
+                          <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#local1" aria-expanded="false" aria-controls="collapseExample">
+                              Leer mas
+                          </button>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm p-0">
+                  <img src="./media/manhattan.jpg" class="img" alt="museo">
+                </div>
+              </div>
+              <div id="local1" class="collapse bg-secondary text-white p-2">
+                <p>El museo inaugurará una **nueva exhibición** sobre **dinosaurios** este fin de semana, donde los visitantes podrán explorar la era de estos fascinantes reptiles a través de **réplicas a tamaño real** de diversas especies, como el imponente **Tyrannosaurus rex** y el gigantesco **Brachiosaurus**. La exhibición ofrecerá estaciones **interactivas** que permitirán a las familias aprender sobre la vida, hábitat y extinción de los dinosaurios, junto con actividades educativas y talleres dirigidos por **paleontólogos**. Se espera la visita de miles de familias, convirtiendo este evento en una **oportunidad perfecta** para disfrutar y aprender en un ambiente familiar. ¡No te lo pierdas!</p>
+              </div>
+          </div>
+          <!--Noticia 1-->
+  
+          <!--Noticia 2-->
+          <div class="col-md p-0">
+            <div class="row m-0 text-white">
+              <div class="col-sm bg-black p-2">
+                <h3 class="top-border">Aumento de la delicuencia en el centro</h3>
+                <div class="p-0">
+                  <p class="text-white p-2">
+                    Las estadísticas muestran un incremento del 15% en delitos menores 
+                    en el área del centro. Los comerciantes están preocupados por 
+                    la seguridad de 
+                    sus negocios y piden más patrullas policiales.
+                  </p>
+                  <div class="container-custom text-center pt-1 d-flex flex-row justify-content-center">
+                    <p class="d-inline-flex gap-1">
+                      <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#local2" aria-expanded="false" aria-controls="collapseExample">
+                          Leer mas
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm p-0">
+                <img src="./media/Midtown_Manhattan_2019.jpg" class="img" alt="museo">
+              </div>
+            </div>
+            <div id="local2" class="collapse bg-secondary text-white p-2">
+              <p>Las **estadísticas recientes** han revelado un alarmante **incremento del 15% en delitos menores** en el área del centro, lo que ha generado una creciente preocupación entre los comerciantes locales. Estos empresarios, que dependen de la seguridad para atraer a los clientes y mantener sus operaciones, expresan su angustia ante el aumento de robos y vandalismo que están afectando sus negocios. En respuesta a esta situación, muchos están haciendo un llamado a las autoridades para que se refuercen las **patrullas policiales** en la zona, con la esperanza de restaurar la confianza de la comunidad y asegurar un entorno más seguro tanto para los negocios como para los visitantes. Esta situación ha llevado a un debate más amplio sobre la **necesidad de implementar medidas de seguridad** efectivas y sostenibles que protejan a los comerciantes y a los residentes de la ciudad.</p>
+            </div>
+          </div>
+          <!--Noticia 2-->
+  
+        </div>
+      </div>
+    </section>
+    <!--Noticias locales-->
+
+    <!--Clima-->
+    <section id="clima" class="container-fluid mb-4">
+      <h2 class="container-fluid red-bg text-white p-1 text-center">Clima</h2>
+
+      <!--Noticia-->
+      <div class="col-md p-0 mb-4">
+        <div class="row m-0 text-white">
+          <div class="col-sm bg-black">
+            <h3 class="container p-2 top-border">Tormenta en el Centro de Nueva York</h3>
+            <div class="">
+              <p class="text-white p-2">
+                Una tormenta inusualmente intensa ha azotado el centro de Nueva York, 
+                provocando inundaciones y caos en las calles. Los ciudadanos 
+                se preguntan si este fenómeno es una simple coincidencia o 
+                si está relacionado con la presencia del Dios del Trueno, Thor, 
+                quien ha sido visto en la ciudad en los últimos días.
+              </p>
+            </div>
+            <div class="container-fluid text-center pt-1 d-flex flex-row justify-content-center">
+              <p class="d-inline-flex gap-1">
+                <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#clima-text" aria-expanded="false" aria-controls="collapseExample">
+                    <h2>Leer mas</h2>
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm p-0">
+            <img src="./media/newyork.jpeg" class="img" alt="museo">
+          </div>
+        </div>
+        <div id="clima-text" class="collapse bg-secondary text-white p-2">
+          <p>Una **tormenta inusualmente intensa** ha azotado el **centro de Nueva York**, trayendo consigo **inundaciones** significativas y un caos generalizado en las calles. Las intensas lluvias y ráfagas de viento han causado que muchas calles se conviertan en ríos, dificultando el tránsito y provocando accidentes. Las autoridades han emitido alertas y recomendaciones para que los ciudadanos permanezcan en sus hogares y eviten las áreas más afectadas. 
+
+            En medio de esta **crisis climática**, los ciudadanos no solo se preocupan por la seguridad y los daños materiales, sino que también comienzan a especular sobre la naturaleza de este fenómeno. Algunos se preguntan si esta tormenta puede ser simplemente una **coincidencia climática** o si, de hecho, está relacionada con la presencia del **Dios del Trueno, Thor**, quien supuestamente ha sido avistado en la ciudad en los días previos a la tormenta. Esta idea ha alimentado rumores y leyendas urbanas, con muchos compartiendo teorías en redes sociales sobre la posible conexión entre los eventos meteorológicos y la mitología nórdica.
+            
+            Las discusiones en cafés y plazas reflejan una mezcla de **miedo y fascinación**, ya que la gente busca respuestas sobre el origen de la tormenta y cómo enfrentar las adversidades que ha traído consigo. Mientras tanto, los servicios de emergencia trabajan arduamente para rescatar a aquellos atrapados por las inundaciones y restaurar el orden en la ciudad. Este evento ha dejado a muchos reflexionando sobre el poder de la naturaleza y su posible vinculación con figuras míticas que han cautivado la imaginación humana a lo largo de los siglos.</p>
+        </div>
+      </div>
+      <!--Noticia-->
+
+    </section>
+    <!--Clima-->
+
+  </main>
+  <footer class="fixed-bottom red-bg p-2 text-white text-center">
+    @DAILY BUGLE COPYRIGHT2024
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+</body>
+</html>
